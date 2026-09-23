@@ -10,7 +10,7 @@
         <ListBox x:Name="lbox_pizzak" Width="240" HorizontalAlignment="Left" SelectionChanged="lbox_pizzak_SelectionChanged"/>
         <ListBox x:Name="lbox_meretek" Width="240" HorizontalAlignment="Center" SelectionChanged="lbox_meretek_SelectionChanged"/>
         <TextBlock x:Name="tb_rendeles" Width="160" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,25,70,0" TextAlignment="Center"/>
-        <Button x:Name="btn_hozzaad" Height="50" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" Content="+" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btn_hozzaad_Click"/>
+        <Button x:Name="btn_hozzaad" Height="50" Width="50" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" Content="+" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btn_hozzaad_Click"/>
         <Grid  x:Name="grid_rendeles" HorizontalAlignment="Right" Width="240" Margin="0,70,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="70"/>

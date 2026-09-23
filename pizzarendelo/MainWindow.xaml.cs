@@ -62,10 +62,12 @@ namespace pizzarendelo
         {
             rendeles.Add(folyamatban[0], folyamatban[1]);
             tb_rendeles.Text = "";
+            Listazas();
         }
 
         private void Listazas()
         {
+            int szamlalo = 0;
             foreach (var item in rendeles)
             {
                 grid_rendeles.RowDefinitions.Add(new RowDefinition());
@@ -87,6 +89,8 @@ namespace pizzarendelo
                     Width = 50,
                     Height = 50,
                 };
+                grid_rendeles.Children.Add(tb);
+                grid_rendeles.Children.Add(btn);
             }
         }
     }
