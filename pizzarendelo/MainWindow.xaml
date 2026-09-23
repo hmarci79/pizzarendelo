@@ -1,0 +1,21 @@
+﻿<Window x:Class="pizzarendelo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pizzarendelo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="40">
+        <ListBox x:Name="lbox_pizzak" Width="240" HorizontalAlignment="Left" SelectionChanged="lbox_pizzak_SelectionChanged"/>
+        <ListBox x:Name="lbox_meretek" Width="240" HorizontalAlignment="Center" SelectionChanged="lbox_meretek_SelectionChanged"/>
+        <TextBlock x:Name="tb_rendeles" Width="160" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,25,70,0" TextAlignment="Center"/>
+        <Button x:Name="btn_hozzaad" Height="50" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" Content="+" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="btn_hozzaad_Click"/>
+        <Grid  x:Name="grid_rendeles" HorizontalAlignment="Right" Width="240" Margin="0,70,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+    </Grid>
+</Window>
